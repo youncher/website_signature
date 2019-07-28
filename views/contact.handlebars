@@ -1,0 +1,48 @@
+<div class="container">
+    <form method="post">
+        <div>
+            <div class="form-group row" >
+            <h3 class="col-sm-10 ">Contact Me</h3>
+            </div>
+            <div class="form-group row" >
+              {{#if error}}
+                Sorry, error occurred sending email.
+                {{/if}}
+
+                {{#if success}}
+                    Message successful sent. You should hear back within 3 business days.
+                {{/if}}
+            </div>
+            <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-5">
+                    <input type="text" name="fname" class="form-control" maxlength="30" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-5">
+                    <input type="text" name="lname" class="form-control" maxlength="30">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-5">
+                    <input type="email" name="email" class="form-control"  maxlength="50" required>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-5">
+                <textarea name="message" class="form-control" style="height:200px" required></textarea>
+            </div>
+        </div>
+            
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        <a href="/" id="cancel" name="cancel" class="btn btn-default" value="cancel">Cancel</a>
+    </form>
+</div>
