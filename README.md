@@ -10,7 +10,3 @@ This repository holds an example of my personal website for offering handwritten
 * Express 4
 * Express Handlebars 3
 * Bootstrap 3
-
-## Note About License
-
-This is a private and not licensed out.
